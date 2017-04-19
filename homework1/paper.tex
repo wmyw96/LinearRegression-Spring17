@@ -31,7 +31,7 @@
 
 \twocolumn[
 
-\aistatstitle{The Evalution of Parameter Estimator for Simple Linear Model}
+\aistatstitle{The Evaluation of Parameter Estimator for Simple Linear Model}
 
 \aistatsauthor{ Yihong Gu }
 
@@ -92,7 +92,7 @@ In the following subsections we discuss the intuition behind each object functio
 
 \subsection{Least Square Estimator}
 
-Firstly we jointly discuss the behaviour and optimization of $G_2(a,b)$, $G_4(a,b)$ and $G_5(a,b)$. In order to get a intuitive understanding of these 'Least Square' object function, we suppose we fix the variable $a$ and want to find the optimal $b$ according to $a$, it might be clear that our object function can be written as the following form [\ref{lsef2}][\ref{lsef4}][\ref{lsef5}]
+Firstly we jointly discuss the behaviour and optimization of $G_2(a,b)$, $G_4(a,b)$ and $G_5(a,b)$. In order to get a intuitive understanding of these 'Least Square' object function, we suppose we fix the variable $a$ and want to find the optimal $b$ according to $a$, it might be clear that our object function can be written as the following form (\ref{lsef2})(\ref{lsef4})(\ref{lsef5})
 
 \begin{eqnarray}
 \label{lsef2}
@@ -139,7 +139,7 @@ The optimal $a, b$ for perpendicular least square object function (PLSE) is
   \hat{b}^{PLSE} &=& \bar{y} - \hat{a}^{PLSE} \bar{x}
 \end{eqnarray}
 
-We want to emphasize that this equation \ref{bb} holds when the sample correlation of $X$ and $Y$ is greater than 0.
+We want to emphasize that this equation (\ref{bb}) holds when the sample correlation of $X$ and $Y$ is greater than 0.
 
 We also use the numerical method to check whether our derivation of the closed forms of VLSE and PLSE are right, so we calculate the partial gradients, which are as followings:
 
@@ -153,7 +153,7 @@ We also use the numerical method to check whether our derivation of the closed f
 \subsection{Least Absolute Deviation}
 \label{lad}
 
-We understand the object function [\ref{ladof}] intuitively through a very simple reduction vision, in which we assume $a=0$, so the optimal $b$ is the median of all the $y_i$'s, so the optimal solution for the object function [\ref{ladof}] might somewhat be a 'median optimization', which might perfer to estimate close to the 'median'
+We understand the object function (\ref{ladof}) intuitively through a very simple reduction vision, in which we assume $a=0$, so the optimal $b$ is the median of all the $y_i$'s, so the optimal solution for the object function (\ref{ladof}) might somewhat be a 'median optimization', which might perfer to estimate close to the 'median'
 
 \begin{eqnarray}
 \label{ladof}
@@ -175,7 +175,7 @@ where we define
 
 \subsection{Least Maximum Estimate}
 
-We understand the object function [\ref{lmeof}] using the similiar method describe in \ref{lad}, we suppose $a=0$, and find that the optimal $b$ will strike a balance between the maximum and the minimum value of $y$, so we found that the least maximum estimate might find a solution that in the 'middle' of the minimum and the maximum 'situation'.
+We understand the object function (\ref{lmeof}) using the similiar method describe in (\ref{lad}), we suppose $a=0$, and find that the optimal $b$ will strike a balance between the maximum and the minimum value of $y$, so we found that the least maximum estimate might find a solution that in the 'middle' of the minimum and the maximum 'situation'.
 
 \begin{eqnarray}
 \label{lmeof}
@@ -193,7 +193,7 @@ where $k = \mathrm{argmax}_i \lvert y_i - a x_i - b\rvert$
 
 \section{Evaluation}
 
-\subsection{Data Variants}
+\subsection{Data Generation}
 
 \label{process}
 
@@ -240,7 +240,7 @@ We quickly overview the following properties:
   \item [2.] \textbf{Bias}: VLSE, VLAD and VLME are both unbiased estimators, and HLSE and PLSE will over-estimate slope $a$ and under-estimate $b$.
 \end{itemize}
 
-When the variance of noise is low ($\sigma=0.1$), we can see how their perform in the boxplot Figure [\ref{30-normal-0.1}]
+When the variance of noise is low ($\sigma=0.1$), we can see how their perform in the boxplot Figure \ref{30-normal-0.1}
 
 \begin{center}
 \makeatletter
@@ -251,7 +251,7 @@ When the variance of noise is low ($\sigma=0.1$), we can see how their perform i
 \label{30-normal-0.1}
 \end{center}
 
-When the variance is quite high ($\sigma=2$), we can see the performance of HSLE and PSLE will be quite poor (for example, even $n=1000$, large sample), the boxplot show in Figure [\ref{1000-normal-2}] 
+When the variance is quite high ($\sigma=2$), we can see the performance of HSLE and PSLE will be quite poor (for example, even $n=1000$, large sample), the boxplot show in Figure \ref{1000-normal-2}
 
 \begin{center}
 \makeatletter
@@ -262,7 +262,7 @@ When the variance is quite high ($\sigma=2$), we can see the performance of HSLE
 \label{1000-normal-2}
 \end{center}
 
-When we focus only on the three unbiased estimaor, we can see how they perform in boxplot Figure [\ref{1000-normal-2-3}], in which VLSE perform slightly better than VLAD, and both of them outperform VLME largely
+When we focus only on the three unbiased estimaor, we can see how they perform in boxplot Figure \ref{1000-normal-2-3}, in which VLSE perform slightly better than VLAD, and both of them outperform VLME largely
 
 \begin{center}
 \makeatletter
@@ -448,7 +448,7 @@ Here we visualize the fitted line of the five estimators. For unity, we use unif
 
 We uses black line to represent the true value, red for VLSE, orange for VLAD, green for VLME, blue for HLSE and purple for PLSE.
 
-The first plot  Figure [\ref{normal_0.1}] uses noise $\sim \mathcal{N}(0,0.1)$. We can see all the estimators give similiar and good estimate due to the low noise.
+The first plot  Figure \ref{normal_0.1} uses noise $\sim \mathcal{N}(0,0.1)$. We can see all the estimators give similiar and good estimate due to the low noise.
 
 \begin{center}
 \makeatletter
@@ -459,7 +459,7 @@ The first plot  Figure [\ref{normal_0.1}] uses noise $\sim \mathcal{N}(0,0.1)$. 
 \label{normal_0.1}
 \end{center}
 
-The second plot  Figure [\ref{normal_1}] uses noise $\sim \mathcal{N}(0,1)$. We can see that PLSE and HLSE give poor results due to they might maintain
+The second plot  Figure \ref{normal_1} uses noise $\sim \mathcal{N}(0,1)$. We can see that PLSE and HLSE give poor results due to they might maintain
  the horizontal distance, which will make $\hat{a}$ more large, VLSE give the best estimate because data distribution agree with its model assumption.
 
 \begin{center}
@@ -471,7 +471,7 @@ The second plot  Figure [\ref{normal_1}] uses noise $\sim \mathcal{N}(0,1)$. We 
 \label{normal_1}
 \end{center}
 
-The third plot Figure [\ref{cauchy}] uses noise $\sim \mathrm{Cauchy}(0,0.2)$. Also, PLSE and HLSE give poor results due to they might maintain the horizontal distance, which will make $\hat{a}$ more large. VLME also give poor result because it want to maintain the extreme outliers (the top point). VLSE are also influenced by the outliers, while the VLAD are not influenced by the outliers.
+The third plot Figure \ref{cauchy} uses noise $\sim \mathrm{Cauchy}(0,0.2)$. Also, PLSE and HLSE give poor results due to they might maintain the horizontal distance, which will make $\hat{a}$ more large. VLME also give poor result because it want to maintain the extreme outliers (the top point). VLSE are also influenced by the outliers, while the VLAD are not influenced by the outliers.
 
 \begin{center}
 \makeatletter
@@ -482,7 +482,7 @@ The third plot Figure [\ref{cauchy}] uses noise $\sim \mathrm{Cauchy}(0,0.2)$. A
 \label{cauchy}
 \end{center}
 
-The last plot Figure [\ref{uniform}] use noise $\sim \mathcal{U}(-1,1)$. Ultimately, PLSE and HLSE still give poor results due to they might maintain the horizontal distance, which will make $\hat{a}$ more large. VLSE and VLAD provides ordinary performance and VLME offer the best results because it find the mid-point between the max and min, which well fit the data distribution.
+The last plot Figure \ref{uniform} use noise $\sim \mathcal{U}(-1,1)$. Ultimately, PLSE and HLSE still give poor results due to they might maintain the horizontal distance, which will make $\hat{a}$ more large. VLSE and VLAD provides ordinary performance and VLME offer the best results because it find the mid-point between the max and min, which well fit the data distribution.
 
 \begin{center}
 \makeatletter

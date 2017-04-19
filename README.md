@@ -4,7 +4,7 @@ RLab homework for course Linear Regression, Spring 17, Tsinghua University
 
 ## Contents
 
-### Homework 1: The Evalution of Parameter Estimator for Simple Linear Model
+### Homework 1: The Evaluation of Parameter Estimator for Simple Linear Model
 
 **Abstract**
 
@@ -14,13 +14,13 @@ In this paper, we get in the model of simple linear regression and proposed five
 
 Yihong Gu**Full PDF**
 
-[The Evalution of Parameter Estimator for Simple Linear Model](homework1/paper.pdf)
+[The Evaluation of Parameter Estimator for Simple Linear Model](homework1/paper.pdf)
 
 **Code**
 
 [homework1.R](homework1/code/homework1.R)
 
-### Homework 2 The Evalution of One Variable Nonparamteric Linear Regression
+### Homework 2 The Evaluation of One Variable Nonparamteric Linear Regression
 
 **Abstract**
 
@@ -30,7 +30,7 @@ In this paper, we proposed an one variable nonparamteric linear regression metho
 
 Yihong Gu**Full PDF**
 
-[The Evalution of One Variable Nonparamteric Linear Regression](homework2/paper.pdf)
+[The Evaluation of One Variable Nonparamteric Linear Regression](homework2/paper.pdf)
 
 **Code**
 

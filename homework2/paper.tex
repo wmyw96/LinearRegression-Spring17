@@ -31,7 +31,7 @@
 
 \twocolumn[
 
-\aistatstitle{The Evalution of One Variable Nonparamteric Linear Regression}
+\aistatstitle{The Evaluation of Univariate Nonparamteric Regression}
 
 \aistatsauthor{ Yihong Gu }
 
@@ -102,7 +102,7 @@ we define the estimate:
 
 We consider the large sample property of our estimator. Considering the most simple case, we assume $x_1,\cdots,x_n$ satisty $x_1\le x_2\le \cdots \le x_n$, $x_1=a$, $x_n=b$ and $x_i-x_{i-1}=\frac{b-a}{n}$, i.e. $x_1,\cdots,x_n$ is point of n-section of interval $[a,b]$.
 
-we also assume $x_0=x_k$, where $k$ satisfy $h+1\le k\le n-h$, which means that the point is not so 'skewed', we re-write the estimator [\ref{est}] as followings:
+we also assume $x_0=x_k$, where $k$ satisfy $h+1\le k\le n-h$, which means that the point is not so 'skewed', we re-write the estimator (\ref{est}) as followings:
 
 \begin{eqnarray}
   \hat{m}_{n,h}(x_0)=\frac{1}{2h+1}\sum_{i=1}^{2h+1}{m(x_{(i)}(x_0))+\epsilon_{(i)}(x_0)} \nonumber
@@ -135,7 +135,7 @@ where $\sigma^2$ is the variance of the noise. At the same time, the bias of the
   \mathrm{bias}&\approx&C'\frac{h^2}{n^2}
 \end{eqnarray}
 
-using the approximation [\ref{var}] and [\ref{bias}], we can write the MSE of the esitmator as followings:
+using the approximation (\ref{var}) and (\ref{bias}), we can write the MSE of the esitmator as followings:
 
 \begin{eqnarray}
 \label{mse}
@@ -153,7 +153,7 @@ to determine the best $h$, (using the basic inequation) we get $h=Cn^{4/5}$, so
 
 In the previous subsection, we discuss the property of the estimator and claim that in order to get the best MSE error, we should make $h$ satisfy $h=Cn^{4/5}$. However, $C$ is unknown and is according to the true function $m(\cdot)$ and $x_0$, so it's impossible to find the value of $C$ analytically. Therefore, we use 'search and fix' method to determine the parameter $C$, then determine the hyperparamter $h$ according to the equation $h=[Cn^{4/5}]$.
 
-Confronted with particular data set, we use search $C$ in $\{0.01n+0.1\}_{n=0}^{290}$ and use few samples (repeat $T=10$ times) to get the optimal $C^*$ which minimize the loss function [\ref{lossf}]. When $C^*$ is fixed, we use $C^*$ to do the following evaluation process and get the results.
+Confronted with particular data set, we use search $C$ in $\{0.01n+0.01\}_{n=0}^{299}$ and use few samples (repeat $T=10$ times) to get the optimal $C^*$ which minimize the loss function (\ref{lossf}). When $C^*$ is fixed, we use $C^*$ to do the following evaluation process and get the results.
 
 Actually, the method above well determine the hypyerparamter $h$ when $x_0$ is in the 'middle' of the data $x$, but works quite poorly when $x_0 \to a$ and $x_0 \to b$. We re-determine the actual $h^*$ in the following method:
 
@@ -166,7 +166,7 @@ Actually, the method above well determine the hypyerparamter $h$ when $x_0$ is i
 
 \section{Evaluation}
 
-\subsection{Data Variants}
+\subsection{Data Generation}
 
 \label{process}
 
@@ -184,7 +184,7 @@ Following the setting of our model, we perform our experiment in the following s
         \item $\epsilon_1, \cdots, \epsilon_n \sim\text{ }\mathrm{i.i.d.} \text{ }\mathcal{N}(0,\sigma^2)$, where $\sigma=0.1$
         \item $\epsilon_1, \cdots, \epsilon_n \sim\text{ }\mathrm{i.i.d.} \text{ }\mathrm{t}_1$
   \item[5.] We use the model $Y_i=m(X_i) + \epsilon_i$ and the generated value $\{x_i\}_{i=1}^n$ and $\{\epsilon_i\}_{i=1}^n$ to calculate $\{y_i\}_{i=1}^n$, so here now we have the data $\{(x_i,y_i)\}_{i=1}^n$.
-  \item[6.] We use the data and the estimator [\ref{est}] and see how they vary from the true function
+  \item[6.] We use the data and the estimator (\ref{est}) and see how they vary from the true function
 \end{itemize}
 
 We repeat [2]$\sim$[6] $T$ times separately for $m_1(\cdot)$ and $m_2(\cdot)$ and generate $\hat{m}(\cdot)$, using the loss function
@@ -254,7 +254,7 @@ From the data we can draw some conclusions:
   \item[3.] The best $C$ might be different for different conditions because we want to minimize $\mathcal{L}$ instead of $\mathrm{bias}^2$.
 \end{itemize}
 
-Because fixed distribution don't have siginificant differences over uniform distribution, so we only give some examples of fixed distribution in Figure [\ref{m1_normal_30_fixed}], [\ref{m1_normal_100_fixed}] and [\ref{m1_normal_1000_fixed}].
+Because fixed distribution don't have siginificant differences over uniform distribution, so we only give some examples of fixed distribution in Figure \ref{m1_normal_30_fixed}, \ref{m1_normal_100_fixed} and \ref{m1_normal_1000_fixed}.
 
 \begin{center}
 \makeatletter
@@ -317,7 +317,7 @@ From the data we can draw some conclusions:
   \item[3.] The best $C$ might be different for different conditions. Moreover, we can see that when X is fixed, the best $C$ indicated that $2h+1$ might be larger (or equal) than $n$, it might imply that the estimator tend to average all the $y$ due to the extreme instability of the noise.
 \end{itemize}
 
-We can see a simple example in Figure [\ref{m1_t_30_fixed}]
+We can see a simple example in Figure \ref{m1_t_30_fixed}
 
 \begin{center}
 \makeatletter
@@ -380,7 +380,7 @@ From the data we can draw some conclusions:
 \end{itemize}
 
 
-Because fixed distribution don't have siginificant differences over uniform distribution, so we only give some examples of fixed distribution in Figure [\ref{m2_normal_30_fixed}], [\ref{m2_normal_100_fixed}] and [\ref{m2_normal_1000_fixed}].
+Because fixed distribution don't have siginificant differences over uniform distribution, so we only give some examples of fixed distribution in Figure \ref{m2_normal_30_fixed}, \ref{m2_normal_100_fixed} and \ref{m2_normal_1000_fixed}.
 
 \begin{center}
 \makeatletter
@@ -409,7 +409,7 @@ Because fixed distribution don't have siginificant differences over uniform dist
 \label{m2_normal_1000_fixed}
 \end{center}
 
-Compare Figure [\ref{m2_normal_1000_fixed}] with Figure [\ref{m2_normal_1000_fixed_0.1}], which uses $C=0.10$, we found the curve of latter figure is  smoother than that of the former.
+Compare Figure \ref{m2_normal_1000_fixed} with Figure \ref{m2_normal_1000_fixed_0.1}, which uses $C=0.10$, we found the curve of latter figure is  smoother than that of the former.
 
 \begin{center}
 \makeatletter
@@ -453,7 +453,7 @@ From the data we can draw some conclusions:
   \item[4.] We can see that the results of $m_2$, Uniformly distributed X is approximately same with that of $m_1$, Uniformly distributed X. It might because that the variance dominate the loss error.
 \end{itemize}
 
-We can see a simple example in Figure [\ref{m2_t_30_fixed}]
+We can see a simple example in Figure \ref{m2_t_30_fixed}
 
 \begin{center}
 \makeatletter
