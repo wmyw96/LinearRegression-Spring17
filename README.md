@@ -35,3 +35,19 @@ Yihong Gu**Full PDF**
 **Code**
 
 [homework2.R](homework2/code/homework2.R)
+
+### Homework 3 Comparsion of Normality Tests Using Monte Carlo Simulation
+
+**Abstract**
+
+In this paper, we carefully compare the per- formance of different methods of normality test. We found that Shapiro-Francia test outperform other methods in most case according to the evaluation of power function. Moreover, all the tests have large sample property, i.e., when significance level α is fixed, the power will approximate to 1 when n approxmiate ∞. We also plot the power function under some careful design of parametric data generation model.
+
+**Author**
+
+Yihong Gu**Full PDF**
+
+[Comparsion of Normality Tests Using Monte Carlo Simulation](homework3/paper.pdf)
+
+**Code**
+
+[homework3.R](homework3/code/hw3.R)
